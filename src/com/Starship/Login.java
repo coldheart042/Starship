@@ -74,14 +74,7 @@ public class Login extends Activity {
 
           SharedPreferences player = getSharedPreferences("player", MODE_PRIVATE);
           SharedPreferences.Editor editor = player.edit();
-          editor.putString("player_name", firstName + ", " + lastName);
-          editor.putString("avatar_name", avatarName);
-          editor.putInt("level", level);
-          editor.putInt("coins", coins);
-          editor.putInt("won", battlesWon);
-          editor.putInt("tied", battlesTied);
-          editor.putInt("lost", battlesLost);
-          editor.putInt("xp", xp);
+          // Save only Credentials for now...
           editor.putString("email", username);
           editor.putString("password", password);
           editor.commit();

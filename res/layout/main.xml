@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:id="@+id/btnLogin" android:onClick="login" android:layout_span="2"/>
+                android:id="@+id/btnLogin" android:onClick="login"/>
     </TableRow>
     <TableRow
             android:layout_width="fill_parent"
@@ -54,4 +54,12 @@
                 android:text="Available Users"
                 android:id="@+id/textView3" android:layout_column="1" android:textAlignment="center"/>
     </TableRow>
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvwAvailable"/>
+    </GridLayout>
 </TableLayout>

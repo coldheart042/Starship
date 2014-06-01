@@ -21,6 +21,7 @@ public class Profile extends Activity {
   AsyncHttpClient client;
   String username, password;
   SharedPreferences player;
+  SharedPreferences.Editor editor;
 
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -38,6 +39,7 @@ public class Profile extends Activity {
     player = getSharedPreferences("player", MODE_PRIVATE);
     username = player.getString("email", "No Email Available");
     password = player.getString("password", "NoPassword");
+    editor = player.edit();
     client = new AsyncHttpClient();
     client.setBasicAuth(username, password);
 
@@ -67,16 +69,28 @@ public class Profile extends Activity {
 
   public void logout(View view){
     client.get("http://battlegameserver.com/api/v1/logout", new AsyncHttpResponseHandler());
-    SharedPreferences.Editor editor = player.edit();
+
     editor.remove("email");
     editor.remove("password");
     editor.commit();
     Toast.makeText(Profile.this, "You have been logged out!", Toast.LENGTH_LONG).show();
     Intent backToLogin = new Intent(Profile.this, Login.class);
     startActivity(backToLogin);
+    finish();
   }
 
   public void newGame(View view){
-    //TODO: Start new game and switch to game screen.
+    client.get("http://battlegameserver.com/api/v1/challenge_computer.json", new JsonHttpResponseHandler(){
+      @Override
+      public void onSuccess(JSONObject object){
+        try{
+          int game_id = object.getInt("game_id");
+          editor.putInt("game_id", game_id);
+          editor.commit();
+        }catch(JSONException e){e.printStackTrace();}
+      }
+    });
+    Intent intent = new Intent(Profile.this,Game.class);
+    startActivity(intent);
   }
 }

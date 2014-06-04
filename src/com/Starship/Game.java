@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpClient;
@@ -28,13 +29,16 @@ public class Game extends Activity {
   public Spinner spnShips, spnDirections;
   List<String> list, sList;
   ArrayAdapter adapter = null, sAdapter = null;
-
-
+  BoardView boardView;
+  AttackView attackView;
+  Button btnFire, btnPlace;
 
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.game);
 
+    boardView = (BoardView)findViewById(R.id.BoardView);
+    attackView = (AttackView)findViewById(R.id.AttackView);
     client = new AsyncHttpClient();
     player = getSharedPreferences("player", MODE_PRIVATE);
     editor = player.edit();
@@ -42,72 +46,27 @@ public class Game extends Activity {
     password = player.getString("password", "");
     game_id = player.getInt("game_id", 0);
     client.setBasicAuth(username, password);
-    spnShips = (Spinner) findViewById(R.id.spnShips);
-    spnDirections = (Spinner) findViewById(R.id.spnDirections);
-
-
-    getAvailableShips();
-    getAvailableDirections();
-    runGame();
+    btnFire = (Button)findViewById(R.id.btnFire);
+    btnPlace = (Button)findViewById(R.id.btnPlace);
+    btnFire.setEnabled(false);
+    //Toast.makeText(this,String.valueOf(game_id),Toast.LENGTH_LONG).show(); //Works!!!
+  }
+  // OnClick method:
+  public void addShip(View view){
+    //TODO: Show add ship dialog
+    //TODO: In dialog, build and run the call to the place_ship method
+    //TODO: Check if placement is illegal
+    //TODO: Update grid
+  }
+  // OnClick method:
+  public void runGame(View view) {
+    //TODO: Show attack dialog
+    //TODO: In attack dialog, build and run the call to the attack method
+      //TODO: Check if the attack has already been made - if so, Toast and re-enter - if not, Save and Send.
+    //TODO: Update the grid (add hits and misses)
   }
 
-  private void runGame() {
-    //TODO: Write the turn algorithm
-  }
-
-  private void getAvailableDirections() {
-
-    client.get("http://battlegameserver.com/api/v1/available_directions", new JsonHttpResponseHandler(){
-      @Override
-      public void onSuccess(JSONObject object) {
-        try {
-
-          //Clear the adapter before 'refreshing'
-          if (adapter != null){
-            adapter.clear();
-          }
-          //Toast.makeText(Game.this, "North: " + String.valueOf(object.getInt("north")), Toast.LENGTH_LONG).show(); //Testing
-          list = new ArrayList<String>();
-          list.add("North: " + String.valueOf(object.getInt("north")));
-          list.add("South: " + String.valueOf(object.getInt("south")));
-          list.add("East: " + String.valueOf(object.getInt("east")));
-          list.add("West: " + String.valueOf(object.getInt("west")));
-          adapter = new ArrayAdapter(Game.this, android.R.layout.simple_spinner_item, list);
-          spnDirections.setAdapter(adapter);
-
-        } catch (JSONException e) {
-          e.printStackTrace();
-        }
-      }
-    });
-  }
-  private void getAvailableShips() {
-    client.get("http://battlegameserver.com/api/v1/available_ships", new JsonHttpResponseHandler(){
-      @Override
-      public void onSuccess(JSONObject object) {
-        try {
-
-          //Clear the adapter before 'refreshing'
-          if (sAdapter != null){
-            sAdapter.clear();
-          }
-          //Toast.makeText(Game.this, "North: " + String.valueOf(object.getInt("north")), Toast.LENGTH_LONG).show(); //Testing
-          sList = new ArrayList<String>();
-          sList.add("Carrier: " + String.valueOf(object.getInt("carrier")));
-          sList.add("Battleship: " + String.valueOf(object.getInt("battleship")));
-          sList.add("Cruiser: " + String.valueOf(object.getInt("cruiser")));
-          sList.add("Submarine: " + String.valueOf(object.getInt("submarine")));
-          sList.add("Destroyer: " + String.valueOf(object.getInt("destroyer")));
-          sAdapter = new ArrayAdapter(Game.this, android.R.layout.simple_spinner_item, sList);
-          spnShips.setAdapter(sAdapter);
-
-        } catch (JSONException e) {
-          e.printStackTrace();
-        }
-      }
-    });
-  }
-
+  // OnClick method:
   public void quit_game(View view){
     Intent intent = new Intent(Game.this, Profile.class);
     startActivity(intent);

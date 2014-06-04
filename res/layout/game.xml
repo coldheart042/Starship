@@ -12,33 +12,27 @@
                 android:layout_height="wrap_content"
                 android:text="Quit Game"
                 android:id="@+id/btnQuit" android:onClick="quit_game"/>
-    </TableRow>
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <TextView
+        <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Available Ships:"
-                android:id="@+id/textView"/>
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spnShips"/>
-    </TableRow>
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <TextView
+                android:text="Attack!"
+                android:id="@+id/btnFire" android:onClick="runGame"/>
+        <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Available Directions:"
-                android:id="@+id/textView2"/>
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spnDirections"/>
+                android:text="Place Ship"
+                android:id="@+id/btnPlace" android:layout_column="2"/>
     </TableRow>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <view android:layout_width="fill_parent"
+              android:layout_height="340dp"
+              class="com.Starship.BoardView" android:id="@+id/BoardView" android:layout_alignParentTop="true"
+              android:layout_alignParentStart="true"/>
+        <view android:layout_width="fill_parent"
+              android:layout_height="340dp"
+              class="com.Starship.AttackView" android:id="@+id/AttackView" android:layout_below="@+id/BoardView"
+              android:layout_alignParentStart="true"/>
+    </RelativeLayout>
 </TableLayout>

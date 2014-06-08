@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84cfdd18-89a1-4e82-972f-107e636fcd8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/Starship/Ship.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/add_ship_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Starship/BoardView.java" afterPath="$PROJECT_DIR$/src/com/Starship/BoardView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/add_ships.xml" />
+      <change type="DELETED" beforePath="C:\Users\Richard\Documents\GitHub\Starship\res\layout\add_ship_dialog.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Starship/Game.java" afterPath="$PROJECT_DIR$/src/com/Starship/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/game.xml" afterPath="$PROJECT_DIR$/res/layout/game.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Starship.iws" />
@@ -91,45 +91,32 @@
       <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="59" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.52859616" vertical-offset="834" max-vertical-offset="1734">
+            <state line="145" column="13" selection-start="5723" selection-end="5723" vertical-scroll-proportion="0.4574468" vertical-offset="2207" max-vertical-offset="3128">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2045#2053#0" expanded="true" />
-                <element signature="e#2127#2666#0" expanded="true" />
-                <element signature="e#2659#2660#0" expanded="true" />
+                <element signature="e#2234#2243#0" expanded="true" />
+                <element signature="e#2357#3081#0" expanded="true" />
+                <element signature="e#3074#3075#0" expanded="true" />
+                <element signature="e#3138#3147#0" expanded="true" />
+                <element signature="e#3199#3207#0" expanded="true" />
+                <element signature="e#3280#4055#0" expanded="true" />
+                <element signature="e#4048#4049#0" expanded="true" />
+                <element signature="e#4560#6250#0" expanded="true" />
+                <element signature="e#5444#6235#0" expanded="true" />
+                <element signature="e#6224#6225#0" expanded="true" />
+                <element signature="e#6244#6245#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Starship/Profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="42" selection-start="2429" selection-end="2429" vertical-scroll-proportion="0.0" vertical-offset="800" max-vertical-offset="1479">
-              <folding>
-                <element signature="e#1820#2688#0" expanded="true" />
-                <element signature="e#2679#2680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_ship_dialog.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/add_ship_dialog.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="add_ships.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/add_ships.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Starship/BoardView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="4" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="1309">
+          <provider editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -149,18 +136,24 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/Starship/JSONWorker.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/Starship/Login.java" />
         <option value="$PROJECT_DIR$/res/layout/profile.xml" />
         <option value="$PROJECT_DIR$/src/com/Starship/Profile.java" />
         <option value="$PROJECT_DIR$/res/layout/gameboard.xml" />
         <option value="$PROJECT_DIR$/res/layout/board.xml" />
-        <option value="$PROJECT_DIR$/res/layout/game.xml" />
         <option value="$PROJECT_DIR$/src/com/Starship/AttackView.java" />
-        <option value="$PROJECT_DIR$/src/com/Starship/Ship.java" />
-        <option value="$PROJECT_DIR$/res/layout/add_ship_dialog.xml" />
         <option value="$PROJECT_DIR$/src/com/Starship/BoardView.java" />
+        <option value="$PROJECT_DIR$/res/layout/game.xml" />
+        <option value="$PROJECT_DIR$/src/com/Starship/AddShipDialogFragment.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/add_ship_dialog.xml" />
+        <option value="$PROJECT_DIR$/src/com/Starship/AddShipDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/Starship/AddShips.java" />
+        <option value="$PROJECT_DIR$/src/com/Starship/ObjectPartial.java" />
+        <option value="$PROJECT_DIR$/src/com/Starship/DirectionOrShip.java" />
+        <option value="$PROJECT_DIR$/res/layout/add_ships.xml" />
+        <option value="$PROJECT_DIR$/src/com/Starship/Ship.java" />
         <option value="$PROJECT_DIR$/src/com/Starship/Game.java" />
       </list>
     </option>
@@ -199,6 +192,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,8 +264,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,15 +552,17 @@
       <workItem from="1401832484484" duration="1892000" />
       <workItem from="1401905250207" duration="16070000" />
       <workItem from="1402082990111" duration="15617000" />
+      <workItem from="1402159660373" duration="41682000" />
+      <workItem from="1402255543851" duration="8366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75111000" />
+    <option name="totallyTimeSpent" value="125159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -584,18 +579,18 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.108093716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115548454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -654,12 +649,87 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="9" selection-start="4943" selection-end="4943" vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="2737">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/add_ships.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="59" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="1734">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="42" selection-start="2429" selection-end="2429" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1717">
+          <folding>
+            <element signature="e#1820#2688#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/BoardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="30" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1122">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -667,7 +737,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="3" selection-start="3105" selection-end="3105" vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="1717">
-          <folding />
+          <folding>
+            <element signature="e#1820#2688#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,21 +763,29 @@
         <state line="48" column="44" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1020">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
@@ -712,21 +793,29 @@
         <state line="104" column="30" selection-start="3672" selection-end="3672" vertical-scroll-proportion="0.0" vertical-offset="1768" max-vertical-offset="2074">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
@@ -734,9 +823,17 @@
         <state line="100" column="92" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2074">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,9 +843,17 @@
         <state line="65" column="80" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1496">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,13 +864,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
@@ -773,9 +878,17 @@
         <state line="61" column="13" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1445">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -786,13 +899,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Login.java">
@@ -801,13 +914,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Login.java">
@@ -816,45 +929,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="65" selection-start="320" selection-end="320" vertical-scroll-proportion="0.11643836" vertical-offset="0" max-vertical-offset="876">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Starship/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="30" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.031088082" vertical-offset="900" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/AttackView.java">
@@ -864,26 +965,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Starship/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.29462737" vertical-offset="0" max-vertical-offset="577">
+    <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/game.xml">
-      <provider editor-type-id="text-editor">
-        <state line="24" column="15" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="731">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="836" selection-end="836" vertical-scroll-proportion="0.5303293" vertical-offset="0" max-vertical-offset="577">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/BoardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-0.3847487" vertical-offset="732" max-vertical-offset="1309">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="42" selection-start="2429" selection-end="2429" vertical-scroll-proportion="0.0" vertical-offset="800" max-vertical-offset="1479">
+        <state line="67" column="3" selection-start="2694" selection-end="2694" vertical-scroll-proportion="1.5008665" vertical-offset="86" max-vertical-offset="1479">
           <folding>
             <element signature="e#1820#2688#0" expanded="true" />
             <element signature="e#2679#2680#0" expanded="true" />
@@ -891,31 +999,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/add_ship_dialog.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/res/layout/add_ships.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+      <provider editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Starship/BoardView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+        <state line="13" column="3" selection-start="314" selection-end="314" vertical-scroll-proportion="0.3830156" vertical-offset="0" max-vertical-offset="577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Starship/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="58" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.97053725" vertical-offset="307" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Starship/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="59" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.52859616" vertical-offset="834" max-vertical-offset="1734">
+        <state line="145" column="13" selection-start="5723" selection-end="5723" vertical-scroll-proportion="0.4574468" vertical-offset="2207" max-vertical-offset="3128">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2053#0" expanded="true" />
-            <element signature="e#2127#2666#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2234#2243#0" expanded="true" />
+            <element signature="e#2357#3081#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3138#3147#0" expanded="true" />
+            <element signature="e#3199#3207#0" expanded="true" />
+            <element signature="e#3280#4055#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4560#6250#0" expanded="true" />
+            <element signature="e#5444#6235#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
           </folding>
         </state>
       </provider>

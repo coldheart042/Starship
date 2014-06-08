@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Row: "
+                android:id="@+id/textView"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnRow"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Column:"
+                android:id="@+id/textView2"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnColumn"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ship:"
+                android:id="@+id/textView3"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnShip" android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Direction:"
+                android:id="@+id/textView4"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnDirection" android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Ship!"
+                android:id="@+id/btnGo" android:layout_column="0" android:layout_span="2"/>
+    </TableRow>
+</TableLayout>

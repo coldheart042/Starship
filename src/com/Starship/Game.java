@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -48,7 +49,6 @@ public class Game extends Activity {
     client.setBasicAuth(username, password);
     btnFire = (Button)findViewById(R.id.btnFire);
     btnPlace = (Button)findViewById(R.id.btnPlace);
-    btnFire.setEnabled(false);
     boardView.ships = new ArrayList<Ship>(5);
 
   }
@@ -146,7 +146,7 @@ public class Game extends Activity {
             }
             if (object.has("status")){
               Log.e("boardView.Ships", "Count Before: " + boardView.ships.size());
-              ship = new Ship(selRow + 1, selCol + 1, shipSize.get(selShip), directions.get(selDirection));
+              ship = new Ship(selCol + 1, selRow + 1, shipSize.get(selShip), directions.get(selDirection));
               boardView.ships.add(ship);
               Log.e("boardView.Ships", "Count After: " + boardView.ships.size());
               boardView.invalidate();
@@ -163,10 +163,59 @@ public class Game extends Activity {
 
   // OnClick method:
   public void runGame(View view) {
-    //TODO: Show attack dialog: Build like addShipDialog.
-    //TODO: In attack dialog, build and run the call to the attack method
-      //TODO: Check if the attack has already been made - if so, Toast and re-enter - if not, Save and Send.
-    //TODO: Update the grid (add hits and misses)
+    final Dialog dialog = new Dialog(Game.this);
+    dialog.setTitle("Make your attack:");
+    dialog.setContentView(R.layout.attack);
+    final Spinner spnAtkRow = (Spinner)dialog.findViewById(R.id.spnAtkRow);
+    final Spinner spnAtkCol = (Spinner)dialog.findViewById(R.id.spnAtkCol);
+    Button btnAttack = (Button)dialog.findViewById(R.id.btnAttack);
+
+    spnAtkRow.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, new ArrayList<String>(Arrays.asList( "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"))));
+    spnAtkCol.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, new ArrayList<String>(Arrays.asList( "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"))));
+    btnAttack.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Log.e("", "btnAttack Clicked, YAY!");
+        String row = String .valueOf(spnAtkRow.getSelectedItem());
+        String col = String.valueOf(spnAtkCol.getSelectedItem());
+        Log.e("CnXn String","http://battlegameserver.com/api/v1/game/"+ String.valueOf(game_id) +"/attack/" + String.valueOf(spnAtkRow.getSelectedItem()) + "/" + String.valueOf(spnAtkCol.getSelectedItem()) + ".json" );
+        client.get("http://battlegameserver.com/api/v1/game/" + String.valueOf(game_id) + "/attack/" + String.valueOf(spnAtkRow.getSelectedItem()) + "/" + String.valueOf(spnAtkCol.getSelectedItem()) + ".json", new JsonHttpResponseHandler() {
+          @Override
+          public void onSuccess(JSONObject object) {
+            try {
+
+              // Add attack to attackView
+              AttackDot yourShot = new AttackDot(Integer.parseInt(String.valueOf(spnAtkCol.getSelectedItem())), spnAtkRow.getSelectedItemPosition() + 1, object.getBoolean("hit"));
+              attackView.attackDots.add(yourShot);
+              attackView.invalidate();
+
+              // Add possible hits on your ships to boardView
+              ArrayList<String> letters = new ArrayList<String>(Arrays.asList("", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"));
+              AttackDot theirShot = new AttackDot(object.getInt("comp_col") + 1, letters.indexOf(object.getString("comp_row")), object.getBoolean("comp_hit"));
+              Log.e("theirShot:", String.valueOf(object.getInt("comp_col")) + String.valueOf(letters.indexOf(object.getString("comp_row"))) + object.getBoolean("comp_hit"));
+              boardView.attackDots.add(theirShot);
+              boardView.invalidate();
+
+              //Determine whether win or lose
+              if (object.getString("winner").equals("computer")){
+                Toast.makeText(Game.this,"You lost!", Toast.LENGTH_LONG).show();
+              }
+              if(object.getString("winner").equals("you")){
+                Toast.makeText(Game.this, "You Win!", Toast.LENGTH_LONG).show();
+              }
+
+                dialog.dismiss();
+            } catch (JSONException e) {
+              e.printStackTrace();
+            }
+          }
+        });
+
+        dialog.dismiss();
+
+      }
+    });
+    dialog.show();
   }
 
   // OnClick method:

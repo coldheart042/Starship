@@ -7,7 +7,7 @@ public class Ship {
   public int xCoord, yCoord, size, direction;
   public Ship(int x, int y, int spaces, int dir){
     super();
-    xCoord = x -1;
+    xCoord = x;
     yCoord = y -1;
     size = spaces;
     direction = dir; //"north":0,"east":2,"south":4,"west":6
